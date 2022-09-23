@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ept-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Playground</title>
+
+    <link rel="stylesheet" href="Estilo.css">
+    <style>
+        .container {
+
+            display: flex;
+
+            flex-wrap: wrap;
+            /*Esse comando quebra linha*/
+            justify-content: center;
+            gap: 5px;
+
+            flex-direction: column;
+            /*Coloca todos os textos para baixo do outro*/
+            
+           
+        
+        }
+
+
+        .container>* {
+        }
+    
+    .diferente{
+        background-color: #003624;
+        width: 100px;
+
+
+    }
+    
+    
+    
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Flexbox Playground</h1>
+    </header>
+
+    <div class="container">
+        <span>Lorem.</span>
+        <span>Lorem, ipsum.</span>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+            fuga?</span>
+        <span>Lorem, ipsum dolor.</span>
+    </div>
+
+    <main class="container">
+        <section>
+            <h2>Lorem, ipsum dolor</h2>
+            <div>Lorem ipsum dolor sit amet.</div>
+        </section>
+        <section>
+            <h2>Harum, debitis exercitationem</h2>
+            <div>Lorem, ipsum dolor.</div>
+        </section>
+        <section>
+            <h2>Repellat, illum odit</h2>
+
+            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam aut nesciunt voluptatum cupiditate ex
+                deserunt libero, aliquid odit nobis nulla?</div>
+        </section>
+    </main>
+
+
+    <footer>
+
+        <a href="https://github.com/MATHEUSFERRAZ08">Matheus Gabriel Ferraz 2022</a>
+
+    </footer>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #5f5f5f;
+            color: #2300e9;
+            text-align: center;
+           
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 5vw;
+
+            /*Com esse Comando você consegue deixa as pavras coloridas*/
+            background: linear-gradient(to bottom, #2300e9 0%, #ff0000 45%, #003624 65%, #4400ff 67%);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            white-space: nowrap;
+        }
+
+        h2 {
+            background: linear-gradient(to bottom, #2300e9 0%, #ff0000 45%, #003624 65%, #4400ff 67%);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            white-space: nowrap;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        footer {
+            background: linear-gradient(to bottom, #2300e9 0%, #ff0000 45%, #003624 65%, #4400ff 67%);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 29px;
+        }
+
+        .container {
+            margin-bottom: 2em;
+            border: 5px solid #ff0000;
+            background-color: #67726e00;
+        }
+
+        .container>* {
+            border: 5px solid #1e06f8;
+            background-color: #8b8b8b;
+        }
+    </style>
+</body>
+
+</html>
